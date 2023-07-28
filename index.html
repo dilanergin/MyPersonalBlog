@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn-primary").click(function () {
+          alert("İletişim Bilgileriniz Alınmıştır.Teşekkürler");
+        });
+      });
+    </script>
+
+<script>
+    $(document).ready(function () {
+      $("input").focus(function () {
+        $(this).css("background-color", "bg-white-green");
+      });
+      $("input").blur(function () {
+        $(this).css("background-color", "bg-white-green");
+      });
+    });
+  </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 
+    - primary meta tags
+  -->
+  <title>Dilan -Blog Website</title>
+  <meta name="title" content="Dilan -Blog Website">
+  <meta name="description" content="This is a blog html,css,js and jQuery">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./entities/images/sunLogo.png" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+     <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./entities/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./entities/images/culture-topicpic.jpeg">
+  <link rel="preload" as="image" href="./entities/images/Sport-Topicpic.png">
+  <link rel="preload" as="image" href="./entities/images/Food-Topicpic.jpeg">
+  <link rel="preload" as="image" href="./entities/images/Travel-Topicpic.jpeg">
+  <link rel="preload" as="image" href="./entities/images/Movie-Topicpic.jpeg">
+  
+    
+</head>
+<body>
+
+
+<!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./entities/images/flowerLogo.png" width="119" height="37" alt="Flower Logo ">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./entities/images/flowerLogo.png" width="119" height="37" alt="Flower Logo">
+          </a>
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+        <ul class="navbar-list">
+
+            <li>
+              <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+            </li>
+  
+            <li>
+              <a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
+            </li>
+  
+            <li>
+              <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+            </li>
+  
+            <li>
+              <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
+            </li>
+  
+            
+          </ul>
+          <div class="navbar-bottom">
+
+            <div class="profile-card">
+                <img src="./entities/images/author1.png" width="48" height="48" alt="Dilan" class="profile-poster">
+                <div>
+                    <p class="card-title">Hello Dilan !</p>
+      
+                    <p class="card-subtitle">
+                      You have 1 new message
+                    </p>
+                  </div>
+                </div>
+                <ul class="link-list">
+
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+                    </li>
+        
+                    <li>
+                      <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+                    </li>
+        
+                  </ul>
+                </div>
+
+                <p class="copyright-text">
+                  Copyright 2023 © Dilan - Web Blog Application.
+                </p>
+            </nav>
+
+            <a href="#" class="btn btn-primary">Subscribe</a>
+      
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+              <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+ </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HomePage
+      -->
+      <section class="homePage" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="homePage-content">
+
+            <p class="homePage-subtitle">Flower'a hoşgeldiniz.</p>
+
+            <h1 class="headline headline-1 section-title">
+              FLOWER <span class="span"></span>
+            </h1>
+
+            <p class="homePage-text">
+              Dünyanın farklı yerlerinden farklı güzelliklerdeki bilgileri sizetimizde paylaşarak sizlere sunuyoruz.
+              Keyifli okumalar!
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="E-Mail" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-secondary">
+                <span class="span"></span>
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="homePage-poster">
+
+            <img src="entities/images/flowerMain.png" width="500" height="490" alt="**" class="w-100" autoplay>
+
+          </div>
+          <div class="homePage-poster2">
+
+            <img src="entities/images/flowerMain2.png" width="500" height="490" alt="**" class="w-101" autoplay>
+
+          </div>
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                İlginizi Çekebilir
+              </h2>
+
+              <p class="card-text">
+                Keyifli okumalar.Lütfe bize geri bildirimde bulunmayı unutmayın.
+              </p>
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                    <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                  </button>
+                </div>
+  
+              </div>
+
+              <div class="slider" data-slider>
+                <ul class="slider-list" data-slider-container>
+  
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+  
+                      <figure class="slider-poster img-holder" style="--width: 507; --height: 618;">
+                        <img src="./entities/images/culture-topicpic.jpeg" width="507" height="618" loading="lazy" alt="Culture"
+                          class="img-cover">
+                      </figure>
+  
+                      <div class="slider-content">
+                        <span class="slider-title">Kültür</span>
+  
+                        <p class="slider-subtitle">12 Makale</p>
+                      </div>
+  
+                    </a>
+                  </li>
+  
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+  
+                      <figure class="slider-poster img-holder" style="--width: 507; --height: 618;">
+                        <img src="./entities/images/Sport-Topicpic.png" width="507" height="618" loading="lazy" alt="Sport"
+                          class="img-cover">
+                      </figure>
+  
+                      <div class="slider-content">
+                        <span class="slider-title">Spor</span>
+  
+                        <p class="slider-subtitle">46 Makale</p>
+                      </div>
+  
+                    </a>
+                  </li>
+
+                  <li class="slider-item">
+                    <a href="#" class="slider-card">
+  
+                      <figure class="slider-poster img-holder" style="--width: 507; --height: 618;">
+                        <img src="./entities/images/Food-Topicpic.jpeg" width="507" height="618" loading="lazy" alt="Food"
+                          class="img-cover">
+                      </figure>
+  
+                      <div class="slider-content">
+                        <span class="slider-title">Yemek</span>
+  
+                        <p class="slider-subtitle">102 Makale</p>
+                      </div>
+  
+                    </a>
+                  </li>
+
+<li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-poster img-holder" style="--width: 507; --height: 618;">
+                      <img src="./entities/images/Travel-Topicpic.jpeg" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Seyehat</span>
+
+                      <p class="slider-subtitle">38 Makale</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                    <a href="#" class="slider-card">
+  
+                      <figure class="slider-poster img-holder" style="--width: 507; --height: 618;">
+                        <img src="./entities/images/Movie-Topicpic.jpeg" width="507" height="618" loading="lazy" alt="Movie"
+                          class="img-cover">
+                      </figure>
+  
+                      <div class="slider-content">
+                        <span class="slider-title">Film</span>
+  
+                        <p class="slider-subtitle">45 Makale</p>
+                      </div>
+  
+                    </a>
+                  </li>
+  
+                </ul>
+              </div>
+  
+            </div>
+  
+          </div>
+        </section>
+
+
+        <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Dilan Öneriyor</span>
+          </h2>
+
+          <p class="section-text">
+            Bunlar ilginizi çekebilir!
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-poster img-holder" style="--width: 1602; --height: 903;">
+                  <img src="./entities/images/everestFeature.jpeg" width="1602" height="903" loading="lazy"
+                    alt="**" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#Sport</a>
+  
+                        <a href="#" class="span hover-2">#Travel</a>
+
+                        <a href="#" class="span hover-2">#Nature</a>
+                      </div>
+
+                    </div>
+  
+                    <h3 class="headline headline-3">
+                      <a href="#" class="card-title hover-2">
+                        Everest dağcıları bekliyor!
+                      </a>
+                    </h3>
+                    <div class="card-wrapper">
+
+                        <div class="profile-card">
+                          <img src="./entities/images/author1.png" width="48" height="48" loading="lazy" alt="Dilan"
+                            class="profile-poster">
+    
+                          <div>
+                            <p class="card-title">Dilan</p>
+    
+                            <p class="card-subtitle">16 Apr 2023</p>
+                          </div>
+                        </div>
+    
+                        <a href="#" class="card-btn">Read more</a>
+    
+                      </div>
+    
+                    </div>
+    
+                  </div>
+                </li>
+                <li>
+                    <div class="card feature-card">
+      
+                      <figure class="card-poster img-holder" style="--width: 1602; --height: 903;">
+                        <img src="./entities/images/acaiBowlFeature2.jpeg" width="1602" height="903" loading="lazy"
+                          alt="Just Smile" class="img-cover">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <div class="card-wrapper">
+                          <div class="card-tag">
+                            <a href="#" class="span hover-2">#Food</a>
+                            <a href="#" class="span hover-2">#Health</a>
+                            <a href="#" class="span hover-2">#LifeStyle</a>
+                          </div>
+      
+                        </div>
+      
+                        <h3 class="headline headline-3">
+                          <a href="#" class="card-title hover-2">
+                           Sağlıklı, gösterişli ve doyurucu! Acai Bowl.
+                          </a>
+                        </h3>
+      
+                        <div class="card-wrapper">
+      
+                          <div class="profile-card">
+                            <img src="./entities/images/Author2.jpeg" width="48" height="48" loading="lazy" alt="Ilgın"
+                              class="profile-poster">
+      
+                            <div>
+                              <p class="card-title">Ilgın</p>
+      
+                              <p class="card-subtitle">27 Apr 2023</p>
+                            </div>
+                          </div>
+      
+                          <a href="#" class="card-btn">Read more</a>
+      
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card feature-card">
+      
+                      <figure class="card-poster img-holder" style="--width: 1602; --height: 903;">
+                        <img src="./entities/images/lifeOfPieFeature3.jpeg" width="1602" height="903" loading="lazy"
+                          alt="Just Smile" class="img-cover">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <div class="card-wrapper">
+                          <div class="card-tag">
+                            
+                            <a href="#" class="span hover-2">#Movie</a>
+                          </div>
+      
+                        </div>
+      
+                        <h3 class="headline headline-3">
+                          <a href="#" class="card-title hover-2">
+                            Tekrar tekrar izlenilesi...
+                          </a>
+                        </h3>
+      
+                        <div class="card-wrapper">
+      
+                          <div class="profile-card">
+                            <img src="./entities/images/author3.png" width="48" height="48" loading="lazy" alt="Emre"
+                              class="profile-poster">
+      
+                            <div>
+                              <p class="card-title">Emre Can</p>
+      
+                              <p class="card-subtitle">1 Oct 2022</p>
+                            </div>
+                          </div>
+      
+                          <a href="#" class="card-btn">Read more</a>
+      
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card feature-card">
+      
+                      <figure class="card-poster img-holder" style="--width: 1602; --height: 903;">
+                        <img src="./entities/images/karadenizFeature4.jpeg" width="1602" height="903" loading="lazy"
+                          alt="Just Smile" class="img-cover">
+                      </figure>
+      
+                      <div class="card-content">
+      
+                        <div class="card-wrapper">
+                          <div class="card-tag">
+                            <a href="#" class="span hover-2">#Travel</a>
+      
+                            <a href="#" class="span hover-2">#Food</a>
+
+                            <a href="#" class="span hover-2">#Culture</a>
+                            <a href="#" class="span hover-2">#Nature</a>
+                          </div>
+      
+                        </div>
+      
+                        <h3 class="headline headline-3">
+                          <a href="#" class="card-title hover-2">
+                            Karadeniz!
+                          </a>
+                        </h3>
+      
+                        <div class="card-wrapper">
+      
+                          <div class="profile-card">
+                            <img src="./entities/images/author1.png" width="48" height="48" loading="lazy" alt="Dilan"
+                              class="profile-poster">
+      
+                            <div>
+                              <p class="card-title">Dilan</p>
+      
+                              <p class="card-subtitle">3 June 2023</p>
+                            </div>
+                          </div>
+      
+                          <a href="#" class="card-btn">Read more</a>
+      
+                        </div>
+      
+                      </div>
+      
+                    </div>
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-secondary">
+                      
+                  <span class="span">Daha Fazla Göster</span>
+      
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+      
+              </div>
+              
+            </section>
+      
+             <!-- 
+        - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Populer Başlıklar</span>
+          </h2>
+
+          <p class="section-text">
+            En çok tıklananlar
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <img src="./entities/images/travelTag.jpeg" width="32" height="32" loading="lazy" alt="Travel">
+
+                <p class="btn-text">Travel</p>
+              </button>
+            </li>
+
+            <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/cultureTag.jpeg" width="32" height="32" loading="lazy" alt="Culture">
+  
+                  <p class="btn-text">Culture</p>
+                </button>
+              </li>
+  
+  
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/foodTag.jpeg" width="32" height="32" loading="lazy" alt="Food">
+  
+                  <p class="btn-text">Food</p>
+                </button>
+              </li>
+  
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/natureTag.jpeg" width="32" height="32" loading="lazy" alt="Nature">
+  
+                  <p class="btn-text">Nature</p>
+                </button>
+              </li>
+  
+              
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/animalTag.jpeg" width="32" height="32" loading="lazy" alt="Animal">
+  
+                  <p class="btn-text">Animal</p>
+                </button>
+              </li>
+  
+    
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/beautyTag.jpeg"32" height="32" loading="lazy" alt="Beauty">
+  
+                  <p class="btn-text">Beauty</p>
+                </button>
+              </li>
+  
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/horoscopesTag.png" width="32" height="32" loading="lazy" alt="Horoscope">
+  
+                  <p class="btn-text">Horoscope</p>
+                </button>
+              </li>
+  
+              <li>
+                <button class="card tag-btn">
+                  <img src="./entities/images/musicTag.jpeg" width="32" height="32" loading="lazy" alt="Music">
+  
+                  <p class="btn-text">Music</p>
+                </button>
+              </li>
+  
+            </ul>
+  
+          </div>
+        </section>
+  
+         <!-- 
+        - #RECENT POSTS
+      -->
+
+      <section class="section recent-posts" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Son Yüklenenler</span>
+            </h2>
+
+            <p class="section-text">
+              Keyifli okumalar
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-posts-card">
+
+                  <figure class="card-poster img-holder" style="--width: 271; --height: 258;">
+                    <img src="./entities/images/algıPost1.jpeg" width="271" height="258" loading="lazy"
+                      alt="Just Smile" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Kültürel Miras</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Farklı güzellik algıları</a>
+                    </h3>
+
+                    <p class="card-text">
+                        "Zürafa boyunlu" sıfatı ile anılan Dünya’nın en uzun boyunlarına sahip kadınlar Tayland’da yaşamaktadırlar. 5 yaşından itibaren boyunlarına pirinçten yapılmış halkalar takarak boyunlarını uzatmaya çalışıyorlar. Boyunlarının yanı sıra, aynı halkaları ayakları ve kollarına da takabiliyorlar. Padaunglar, her yeni yaşına girdiği zaman bedenlerinde takılı olan halkalara bir yenisini daha ekliyorlar ve halka sayısı 37’ye kadar çıkabiliyor. Tıbbi müdahele gerektiren durumlarda halkalar boyunlardan çıkartılıyor. Aynı zamanda, eskiyen halkalar da çıkartılarak yerine yenileri takılıyor.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Culture</a>
+
+                        <a href="#" class="span hover-2"># Travel</a>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-posts-card">
+
+                  <figure class="card-poster img-holder" style="--width: 271; --height: 258;">
+                    <img src="./entities/images/sushipost2.jpeg" width="271" height="258" loading="lazy"
+                      alt="Just Smile" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Uzak Doğu Mutfağı</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Son dönemlerin en popüler yemeği</a>
+                    </h3>
+
+                    <p class="card-text">
+                        Sushi, özel bir pirincin birçok defa yıkanıp pişirilmesinden sonra Mitzukan (pirinç sirkesi), şeker ve tuz karışımı ile tatlandırılarak hazırlanan pilavın üstüne veya içine, balık ve diğer deniz ürünleri veya sebze gibi malzemeler konarak servis edilen bir Japon spesiyalitesidir.
+                        Yosuna sarılarak yapılan sunum şekli en çok bilinen şeklidir. Ama bu, temelde dört çeşit olan sushi çeşidinden sadece bir tanesidir.
+                        Sushi'de tazelik en büyük kurallardan biridir. Yapıldıktan en geç birkaç saat içinde yenilmesi gerekir.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Food</a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+                <a href="#" class="pagination-btn" aria-label="previous page">
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </a>
+                <a href="#" class="pagination-btn">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn" aria-label="more page">...</a>
+  
+                <a href="#" class="pagination-btn" aria-label="next page">
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+  
+            </nav>
+
+        </div>
+  
+        <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">En Çok Okunanlar</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-poster img-holder" style="--width: 64; --height: 64;">
+                      <img src="./entities/images/flamingoPoPost.jpeg" width="64" height="64" loading="lazy"
+                        alt="Just smile" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Türkülere ilham olan "Allı Turna"</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">12 mins read</p>
+
+                        <time class="publish-date" datetime="2020-03-12">12 March 2020</time>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <div class="popular-card">
+  
+                      <figure class="card-poster img-holder" style="--width: 64; --height: 64;">
+                        <img src="./entities/images/coronaPoPost.jpeg" width="64" height="64" loading="lazy"
+                          alt="Just smile" class="img-cover">
+                      </figure>
+  
+                      <div class="card-content">
+  
+                        <h4 class="headline headline-4 card-title">
+                          <a href="#" class="link hover-2">Corona yaşamımızı nasıl değiştirecek?</a>
+                        </h4>
+  
+                        <div class="warpper">
+                          <p class="card-subtitle">15 mins read</p>
+  
+                          <time class="publish-date" datetime="2019-12-01">1 November 2019</time>
+                        </div>
+  
+                      </div>
+  
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="popular-card">
+  
+                      <figure class="card-poster img-holder" style="--width: 64; --height: 64;">
+                        <img src="./entities/images/müslümPoPost.jpeg" width="64" height="64" loading="lazy"
+                          alt="Just smile" class="img-cover">
+                      </figure>
+  
+                      <div class="card-content">
+  
+                        <h4 class="headline headline-4 card-title">
+                          <a href="#" class="link hover-2">Şarkıları gibi filmi de çok sevildi</a>
+                        </h4>
+  
+                        <div class="warpper">
+                          <p class="card-subtitle">10 mins read</p>
+  
+                          <time class="publish-date" datetime="2019-01-30">30 January 2019</time>
+                        </div>
+
+                      </div>
+  
+                    </div>
+                  </li>
+                </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Sizden Gelenler</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      -Vay canına! Allı turnaların Flamingo olacağı hiç aklıma gelmemişti 😄
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-poster img-holder">
+                        <img src="./entities/images/author4.jpeg" width="32" height="32" loading="lazy" alt="Selen">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Selen Ünver</p>
+
+                        <time class="card-date" datetime="2021-07-28">28 June 2021</time>
+                      </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+              <div class="comment-card">
+
+                <blockquote class="card-text">
+                  -Paylaşımlarınızı beğeniyorum fakat daha fazla gönderi paylaşın lütfen.
+                </blockquote>
+
+                <div class="profile-card">
+                  <figure class="profile-poster img-holder">
+                    <img src="./entities/images/author6.jpeg" width="32" height="32" loading="lazy" alt="Just Smile">
+                  </figure>
+
+                  <div>
+                    <p class="card-title">Süleyman Ergin</p>
+
+                    <time class="card-date" datetime="2023-04-20">20 April 2023</time>
+                  </div>
+                </div>
+            </div>
+        </li>
+        <li>
+          <div class="comment-card">
+
+            <blockquote class="card-text">
+              -Çok güzel bir site ❤️
+            </blockquote>
+
+            <div class="profile-card">
+              <figure class="profile-poster img-holder">
+                <img src="./entities/images/Author2.jpeg" width="32" height="32" loading="lazy" alt="Just Smile">
+              </figure>
+
+              <div>
+                <p class="card-title">Ilgın Ergin</p>
+
+                <time class="card-date" datetime="2023-04-24">24 April 2023</time>
+              </div>
+            </div>
+        </div>
+    </li>
+            <li>
+              <div class="comment-card">
+
+                <blockquote class="card-text">
+                   -Önerdiğiniz filmler bi harika! 
+                </blockquote>
+
+                <div class="profile-card">
+                  <figure class="profile-poster img-holder">
+                    <img src="./entities/images/author5.jpeg" width="32" height="32" loading="lazy" alt="Talha">
+                  </figure>
+
+                  <div>
+                    <p class="card-title">Talha Aslan</p>
+
+                    <time class="card-date" datetime="2023-05-15">15 May 2023</time>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+        </ul>
+
+    </div>
+
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="./entities/images/flowerLogo.png" width="119" height="37" loading="lazy" alt="flower logo">
+            </a>
+
+            <p class="footer-text">
+              Anlatmak istediğiniz hikayeler varsa sizde bizimle paylaşabilirsiniz.
+            </p>
+
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-text">
+            Bize katılın
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a  href="#" class="btn btn-primary" >
+              <span class="span">Subscribe</span>
+              
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">Dilan Ergin</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+                  
+      <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+    
+<!-- 
+    - custom js link
+  -->
+  <script src="./entities/js/script.js"></script>
+
+   <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
