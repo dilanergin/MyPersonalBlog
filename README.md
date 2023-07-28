@@ -67,7 +67,6 @@ window.addEventListener("scroll", () => {
     backTopBtn.classList.remove("active");
   }
 - Bu kod ile sayfanın en altından en üstüne dönmeyi sağlayan buton eklenmiştir.
-- Bu kod benzer bir site uygulamasından hazır olarak alınıp, değerleri, şekli ve rengi site temasına göre değiştirilmiştir. 
 
 
 -> Örnek jQuery Kodu:
